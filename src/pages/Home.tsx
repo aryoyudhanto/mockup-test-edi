@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import axios from "axios";
 
 import { WrappingCard } from "../components/Card";
-import { DatasType } from "../utils/todo";
+import { DatasType } from "../utils/type";
 import Layout from "../components/Layout";
 import Modal from "../components/Modal";
 import CustomInput from "../components/CustomInput";
@@ -146,7 +146,7 @@ const Home = () => {
           <>
             <label
               htmlFor="my-modal-1"
-              className="btn capitalize bg-blue-700 text-white border-none mb-5 hover:bg-blue-600"
+              className="btn capitalize bg-blue-700 text-white border-none mb-5 hover:bg-blue-600 hover:scale-105 transition"
             >
               Create New Task
             </label>
@@ -238,7 +238,7 @@ const Home = () => {
                               className={`normal-case text-pink-airbnb bg-transparent`}
                               onClick={() => setIdTask(item.id)}
                             >
-                              <div className="flex flex-col items-center justify-center cursor-pointer">
+                              <div className="flex flex-col items-center justify-center cursor-pointer hover:scale-125 transition">
                                 <BiEditAlt
                                   size={20}
                                   className="text-yellow-600"
@@ -281,7 +281,7 @@ const Home = () => {
                             </Modal>
                           </td>
                           <td className="px-6 py-4 text-sm font-medium whitespace-nowrap w-[10%]">
-                            <div className="flex flex-col items-center justify-center cursor-pointer">
+                            <div className="flex flex-col items-center justify-center cursor-pointer hover:scale-125 transition">
                               <MdDeleteForever
                                 size={20}
                                 className="text-red-500"
