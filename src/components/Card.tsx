@@ -7,6 +7,10 @@ interface CardProps {
   children?: React.ReactNode;
   rightSide?: any;
   titleSet?: string;
+  name?: string;
+  img?: string;
+  key?: string;
+  onClick?: () => void;
 }
 
 export const WrappingCard: FC<CardProps> = ({
@@ -32,6 +36,32 @@ export const WrappingCard: FC<CardProps> = ({
         </div>
         <hr className="mx-3 md:mx-5 xl:mx-10 my-3 border-[1.5px] border-sky" />
         <div className={`${parentSet} p-3 md:p-6 xl:p-10`}>{children}</div>
+      </div>
+    </div>
+  );
+};
+
+export const MiniCard: FC<CardProps> = ({
+  name,
+  img,
+  key,
+  onClick,
+}) => {
+  return (
+    <div
+      className="card card-compact bg-white shadow-lg border-2 border-black m-2 hover:scale-95 transition"
+      key={key}
+    >
+      <figure className="w-full h-full p-5 " onClick={onClick}>
+        <img className="h-full" src={img} alt={name} width={150} height={150}/>
+      </figure>
+      <div className="card-body">
+        <p
+          className="text-center text-black text-xs md:text-md lg:text-lg uppercase font-bold "
+          onClick={onClick}
+        >
+          {name}
+        </p>
       </div>
     </div>
   );
