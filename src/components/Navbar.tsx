@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-white shadow-md sticky top-0 z-50">
       <div className="flex-1 ml-5 md:ml-10">
-        <Link to="/">
+        <Link to="/home">
           <img
             src={Logo}
             className="btn btn-ghost"
@@ -69,15 +69,12 @@ const Navbar = () => {
         >
           <li className="text-black">
             <Link to="/home">
-              <p className="active:bg-gray-500">Home</p>
+              <p className="active:bg-gray-500">Home / CRUD Test</p>
             </Link>
             {cookie.token ? (
               <>
-                <Link to="/mudik">
-                  <p className="active:bg-gray-500">Tiket Mudik</p>
-                </Link>
-                <Link to="/verif">
-                  <p className="active:bg-gray-500">Verifikasi Tiket</p>
+                <Link to="/pokemon">
+                  <p className="active:bg-gray-500">Pagination Test</p>
                 </Link>
                 <p className="active:bg-gray-500" onClick={() => onLogout()}>
                   Logout
