@@ -2,17 +2,19 @@
 
 ## About Project 
 
-coming soon
+<p align="center">Projek ini dibuat dari sisi Frontend saja dengan library ReactJS dengan melakukan consume dari beberapa API. Projek ini dapat melakukan CRUD Task, dan projek ini dapat menampilkan pokemon dengan fitur pagination.</p>
 
 ## Deployment
 
-Link: coming soon
+Link: https://mockup-test-edi.vercel.app/
 
 ## Feature
 
-coming soon
+- Login / Logout user with Reqres.in API
+- CRUD task with todoist API
+- List Pokemon with PokeAPI pagination
 
-## Login 
+## Login User
 
 - email: eve.holt@reqres.in
 - password: cityslicka
@@ -28,7 +30,9 @@ coming soon
 - [React-Cookie](https://www.npmjs.com/package/react-cookie)
 - [React-router-dom](https://reactrouter.com/)
 - [Sweetalert2](https://sweetalert2.github.io/)
-- [ReqRes.in-API-Login](https://reqres.in/)
+- [ReqRes.in-API](https://reqres.in/)
+- [Todoist-API](https://developer.todoist.com/)
+- [Pokemon-API](https://pokeapi.co/)
 - [Vercel](https://vercel.com/)
 
 ## Getting Started
