@@ -12,3 +12,9 @@ export interface DetailTaskType {
     priority?: number
     url?: string
 }
+
+export interface PokemonType {
+    name: string
+    url: string
+    id: string
+}
